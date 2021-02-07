@@ -1,23 +1,23 @@
-Модуль Импорт из YML
-Автор: Gennady Telegin <support@itxd.ru>
+Module Import from YML
+Author: Gennady Telegin <support@itxd.ru>
 
-Модуль импортирует данные в магазин из YML файла (http://help.yandex.ru/partnermarket/?id=1111425).
+The module imports data to the store from a YML file (http://help.yandex.ru/partnermarket/?id=1111425).
 
-Парсится следующая информация:
-1. Дерево категорий - синхронизируется с уже существующими категориями в магазине (по названию и полному пути от корня).
-2. Товары (синхронизируются по артикулу с уже существующими в магазине), включая следующие поля:
-  a) Производитель - создаются недостающие
-  b) Атрибуты - создается недостающие
-  c) Наличие (в наличии или предзаказ)
-3. Картинки (скачиваются на сервер).
+The following information is parsed:
+1. Category tree - synchronizes with already existing categories in the store (by name and full path from the root).
+2. Products (synchronized by SKU with those already existing in the store), including the following fields:
+  a) Manufacturer - missing
+  b) Attributes - missing ones are created
+  c) Availability (in stock or pre-order)
+3. Pictures (downloaded to the server).
 
-Задачи, которые можно решать с помощью модуля:
-1. Миграция одного магазина на другой. В модуле есть режим полного удаления данных перед импортом, который удаляет из магазина все категории, товары, атрибуты и производителей, а затем уже делает импорт.
-2. Импорт сторонних каталогов на сайт. Если импортировать данные каждый день, то в магазин будут добавлятся только новые, ранее не добавленные в магазин товары.
+Tasks that can be solved using the module:
+1. Migration from one store to another. The module has a mode for completely deleting data before importing, which removes all categories, products, attributes and manufacturers from the store, and then makes an import.
+2. Import of third-party catalogs to the site. If you import data every day, then only new products that have not been previously added to the store will be added to the store.
 
-Установка:
-0. Должен быть установлен VQMod (https://code.google.com/p/vqmod/). Если вы не хотите его устанавливать, то можно вручную добавить ссылку на модуль - vqmod нужен только для этого.
-1. Скопируйте содержимое каталога upload в корень вашего сайта.
-2. Модуль доступен в администраторской панели, Система->Импорт YML
+Installation:
+0. VQMod must be installed (https://code.google.com/p/vqmod/). If you don't want to install it, you can manually add a link to the module - vqmod is only needed for this.
+1. Copy the contents of the upload directory to the root of your site.
+2. The module is available in the admin panel, System-> YML Import
 
-Если возникли сложности или вопросы, то обращайтесь по support@itxd.ru
+If you have any difficulties or questions, please contact support@itxd.ru 
